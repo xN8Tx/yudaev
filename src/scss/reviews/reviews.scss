@@ -1,0 +1,48 @@
+// reviews
+.reviews {
+    width: 100%;
+    min-height: 100vh;
+    margin: 120px 0;
+    background-color: #1D1D1D;
+    .wrapper {
+        height: 100%;
+    }
+    &__text {
+        width: 100%;
+        position: relative;
+        img {
+            position: absolute;
+            z-index: 1;
+            top: -200%;
+            left: 0;
+        }
+    }
+
+    &__row {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 200px;
+        // background: url("../image/sphere-2.png") center center/100% 100% no-repeat;
+    }
+    &__item {
+        width: 25%;
+        z-index: 1;
+        img {
+            margin-top: 30px;
+            width: 90%;
+            height: 90%;
+        }
+    }
+    &__sphere {
+        position: absolute;
+        left: -15%;
+        img {
+            max-width: 100%;
+            min-height: 100%;
+        }
+    }
+}

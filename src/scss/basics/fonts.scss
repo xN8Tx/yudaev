@@ -1,0 +1,63 @@
+// fonts
+@font-face {font-family: "Druk Wide";
+    src: url("../fonts/Druk Text Wide Bold Italic.eot"),
+    url("../fonts/Druk Text Wide Bold Italic.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/Druk Text Wide Bold Italic.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/Druk Text Wide Bold Italic.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-DemiBold.eot');
+    src: local('../fonts/TT Travels DemiBold'), local('TTTravels-DemiBold'),
+        url('../fonts/TTTravels-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTTravels-DemiBold.woff2') format('woff2'),
+        url('../fonts/TTTravels-DemiBold.woff') format('woff'),
+        url('../fonts/TTTravels-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-Regular.eot');
+    src: local('../fonts/TT Travels Regular'), local('TTTravels-Regular'),
+        url('../fonts/TTTravels-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTTravels-Regular.woff2') format('woff2'),
+        url('../fonts/TTTravels-Regular.woff') format('woff'),
+        url('../fonts/TTTravels-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-DemiBoldItalic.eot');
+    src: local('../fonts/TT Travels DemiBold Italic'), local('TTTravels-DemiBoldItalic'),
+        url('../fonts/TTTravels-DemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTTravels-DemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/TTTravels-DemiBoldItalic.woff') format('woff'),
+        url('../fonts/TTTravels-DemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-ExtraBold.eot');
+    src: local('../fonts/TT Travels ExtraBold'), local('TTTravels-ExtraBold'),
+        url('../fonts/TTTravels-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTTravels-ExtraBold.woff2') format('woff2'),
+        url('../fonts/TTTravels-ExtraBold.woff') format('woff'),
+        url('../fonts/TTTravels-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-Italic.eot');
+    src: local('../fonts/TT Travels Italic'), local('TTTravels-Italic'),
+        url('../fonts/TTTravels-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTTravels-Italic.woff2') format('woff2'),
+        url('../fonts/TTTravels-Italic.woff') format('woff'),
+        url('../fonts/TTTravels-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}

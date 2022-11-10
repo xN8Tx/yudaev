@@ -1,0 +1,146 @@
+// cards
+.cards {
+    width: 100%;
+    margin-bottom: 100px;
+    position: relative;
+    background-color: #1D1D1D;
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__item {
+        left: 0;
+        top: 0;
+        width: 600px;
+
+        &_1 {
+            transform: translate(-10px, 0);
+            height: 800px;
+            background: url('../image/card-bg-1.png');
+
+            .cards__item_wrapper {
+                h4 {
+                    &::before {
+                        content: '01';
+                        -webkit-text-stroke: 3px black;
+                    }
+                }
+                h3 {
+                    color: black;
+                }
+                li {
+                    color: rgba(0, 0, 0, 0.7);
+                }
+            }
+        }
+        &_2 {
+            transform: translate(10px, -126px);
+            height: 560px;
+            background: url('../image/card-bg-2.png');
+            
+            .cards__item_wrapper {
+                h4 {
+                    &::before {
+                        content: '02';
+                        -webkit-text-stroke: 3px white;
+                    }
+                }
+                h3 {
+                    color: white;
+                    margin-left: -20px;
+                }
+                li {
+                    color: white;
+                }
+            }
+        }
+
+        &_card {
+            transform: translate(15%, -55px);
+            width: 460px;
+            padding: 80px 0;
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid #BABABA;
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &_wrapper {
+            h4 {
+                position: relative;
+                font-family: 'TT Travels';
+                font-style: italic;
+                font-weight: 700;
+                font-size: 96px;
+                line-height: 80%;
+                text-align: center;
+                letter-spacing: -0.055em;
+                color: transparent;
+                
+                &::before {
+                    font-family: 'TT Travels';
+                    font-style: italic;
+                    font-weight: 700;
+                    font-size: 96px;
+                    line-height: 80%;
+                    text-align: center;
+                    letter-spacing: -0.055em;
+                    position: absolute;
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    left: 30px;
+                    -webkit-text-stroke: 3px white;
+                }
+            }
+            ul {
+                margin-top: 60px;
+            }
+            li:not(:first-child) {
+                padding-top: 7px;
+            }
+        }
+    }
+    &__handbg {
+        position: absolute;
+        left: 15%;
+        top: 30%;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 1440px) {
+    .cards {
+        &__item {
+            &_1 {
+                transform: scale(0.9);
+            }
+            &_2 {
+                transform: scale(0.9);
+            }
+        }
+    }
+}
+@media (max-width: 560px) {
+    .cards {
+        &__item {
+            &_1 {
+                transform: scale(0.6);
+            }
+            &_2 {
+                transform: scale(0.6) translate(0, -40%);
+            }
+        }
+    }
+}

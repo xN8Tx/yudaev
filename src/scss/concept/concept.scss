@@ -1,0 +1,105 @@
+// concept
+.concept {
+    width: 100%;
+    height: 90vh;
+    padding-top: 50px;
+    background-color: #121212;
+
+    .wrapper {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__uptext {
+        ul {
+            display: flex;
+            font-family: 'TT Travels';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 80%;
+            text-align: center;
+            letter-spacing: -0.055em;
+        }
+        li { transition: all ease-out 0.3s; }
+        li:not(:first-child) {
+            padding-left: 46px;
+        }
+        li:hover {
+            color: #A8CF36;
+            transform: scale(1.1);
+        }
+    }
+    &__heading {
+        margin-top: 25px;
+        h2 {
+            max-width: 1000px;
+        }
+    }
+    &__button {
+        margin-top: 40px;
+        margin-left: 96px;
+        input {
+            width: 346px;
+            height: 67px;
+            background: #252525;
+            border-radius: 33.5px;
+            font-family: 'TT Travels';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 80%;
+            letter-spacing: -0.055em;
+            padding-left: 30px;
+            color: white;
+        }
+        input::-webkit-input-placeholder{
+            color: white;
+        }
+        button {
+            transform: translate(-96px);
+            width: 280px;
+            height: 67px;
+        }
+    }
+}
+
+@media (max-width: 1040px) {
+    .concept {
+
+
+        &__button {
+            margin-left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            button {
+                margin-top: 10px;
+                transform: translate(0);
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .concept {
+        height: 80vh;
+        &__button {
+            margin-left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            input {
+                width: 250px;
+            }
+            button {
+                width: 200px;
+                margin-top: 10px;
+                transform: translate(0);
+            }
+        }
+    }
+}

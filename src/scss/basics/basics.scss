@@ -1,0 +1,130 @@
+// basics
+body {
+    background-color: #1D1D1D;
+    color: #fff;
+    &.lock {
+        overflow: hidden;
+    }
+}
+.content {
+    position: relative;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+
+.heading {
+    &_2 {
+        font-family: 'TT Travels';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 96px;
+        line-height: 80%;
+        text-align: center;
+        letter-spacing: -0.055em;
+        text-transform: uppercase;
+    }
+    &_3 {
+        font-family: 'TT Travels';
+        font-style: italic;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 80%;
+        letter-spacing: -0.055em;
+        text-transform: uppercase;
+    }
+    &_4 {
+        font-family: 'TT Travels';
+        font-style: italic;
+        font-weight: 700;
+        font-size: 144px;
+        line-height: 80%;
+        letter-spacing: -0.055em;
+    }
+    &_bold {
+        font-family: 'TT Travels';
+        font-style: italic;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 80%;
+        text-align: center;
+        letter-spacing: -0.055em;
+        background: linear-gradient(262.16deg, #A9D137 43.95%, #43D137 92.62%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        text-transform: uppercase;
+    }
+}
+
+.text {
+    font-family: 'TT Travels';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 154%;
+    text-align: center;
+    letter-spacing: -0.005em;
+
+    &_bold {
+        font-family: 'TT Travels';
+        font-style: italic;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 154%;
+        text-align: center;
+        letter-spacing: -0.005em;
+        text-transform: uppercase;
+    }
+    &_mini {
+        font-family: 'TT Travels';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 154%;
+        letter-spacing: -0.005em;
+    }
+}
+
+.button {
+    background: linear-gradient(262.16deg, #A9D137 43.95%, #43D137 92.62%);
+    border-radius: 33.5px;
+
+    font-family: 'TT Travels';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 80%;
+    /* or 14px */
+
+    text-align: center;
+    letter-spacing: -0.035em;
+
+    transition: all ease-out 0.4s;
+
+    &:hover {
+        box-shadow: 4px 4px 8px 5px rgba(169, 209, 55, 0.2);
+    }
+}
+
+.wrapper {
+    margin: 0 15%;
+}
+
+@media (max-width: 576px) {
+    .wrapper {
+        margin: 0 5%;
+    }
+    .heading {
+        &_2 {
+            font-size: clamp(50px, 3vw, 75px);
+        }
+        &_3 {
+            font-size: clamp(50px, 3vw, 75px);
+        }
+        &_bold {
+            font-size: clamp(50px, 3vw, 75px);
+        }
+    }
+}
